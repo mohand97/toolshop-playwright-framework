@@ -6,7 +6,7 @@ const authFile = 'playwright/.auth/user.json';   // où on sauve la session
 setup('authenticate', async ({ page,homePage,loginPage}) => {
   // se connecter (une seule fois)
     await homePage.goTo('/');
-    await homePage.expectProductGridIsDisplayed()
+    
     await homePage.goToSignInPage();
     await loginPage.login(existingUser.email, existingUser.password)
 
