@@ -25,6 +25,7 @@ export default defineConfig({
     launchOptions: {
 //slowMo: 2000,   // pause de 1000ms (1s) après chaque action
   },
+  screenshot: 'only-on-failure' ,
   
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://practicesoftwaretesting.com',
@@ -35,7 +36,7 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
  projects: [
-  
+
     {
   name: 'setup',
   testMatch: /.*\.setup\.ts/,
