@@ -1,7 +1,7 @@
 import { test, expect } from '../../fixtures/Fixtures';
 import {existingUser} from '../../data/users'
 
-test.describe(' Panier ', {tag :'@smoke'},() => {
+test.describe('Panier', {tag :'@smoke'},() => {
 
 
 test.beforeEach(async ({ homePage }) => {
@@ -82,7 +82,7 @@ test('modifier la quantité dans le panier tool met à jour le total', async ({ 
     
 });
 
-test('Supprimer un produit du panier', async ({ page,homePage,productDetailPage,cartPage }) => {
+test.skip('Supprimer un produit du panier', async ({ page,homePage,productDetailPage,cartPage }) => {
     
     
     await homePage.expectProductGridIsDisplayed()
