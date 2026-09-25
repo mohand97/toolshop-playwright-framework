@@ -35,10 +35,12 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
  projects: [
+  
     {
-    name: 'setup',
-    testMatch: /.*\.setup\.ts/,   // cible auth.setup.ts par son nom
-    },
+  name: 'setup',
+  testMatch: /.*\.setup\.ts/,
+  use: { baseURL: 'https://practicesoftwaretesting.com' },   // ← ajouter
+},
      {
       name: 'api',
       testDir: './tests/api',

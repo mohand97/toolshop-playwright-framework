@@ -1,5 +1,5 @@
-import { test, expect } from '../../fixtures/Fixtures';
-import {existingUser} from '../../data/users'
+import { test, expect } from '../fixtures/Fixtures';
+import {existingUser} from '../data/users'
 
 test.describe(' Connexion ', {tag :'@smoke'},() => {
 
